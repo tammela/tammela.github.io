@@ -12,6 +12,7 @@ pandoc -s -c src/pandoc.css -A src/footer.html src/index.md -o index.html
 
 # generate articles
 for f in $(ls src/*.md | grep -v "index.md"); do
+   echo "Generating $f"
    output=$(echo "$f" | sed "s/src/kernel/" | sed "s/\.md/\.pdf/")
    pandoc -s "$f" --pdf-engine=xelatex -o "$output"
 done

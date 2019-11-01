@@ -31,6 +31,4 @@ A little corner about kernels and programming.
 
 [LinkedIn](https://www.linkedin.com/in/pedro-tammela/)
 
-[Curriculum Vitae](./cv/curriculum.pdf)
-
 [GitHub](https://github.com/tammela)
