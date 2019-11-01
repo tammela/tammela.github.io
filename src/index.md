@@ -12,7 +12,7 @@ A little corner about kernels and programming.
 
 ### Programming
 
-[Security](https://xkcd.com/538/)
+[Security (comic)](https://xkcd.com/538/)
 
 [Lua LLVM Binding](https://github.com/tammela/lua-llvm-binding)
 
@@ -30,6 +30,8 @@ A little corner about kernels and programming.
 
 
 ### Publications
+[Faking kernel pointers as user pointers - PagedOut Institute #2](./articles/pagedout-2.pdf)
+
 [Scripting Linux system calls with Lua - Lua Workshop 2018](./slides/Workshop2018.pdf)
 
 ### About
@@ -37,3 +39,5 @@ A little corner about kernels and programming.
 [LinkedIn](https://www.linkedin.com/in/pedro-tammela/)
 
 [GitHub](https://github.com/tammela)
+
+[PGP](../pub.txt)
