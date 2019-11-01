@@ -3,6 +3,9 @@
 A little corner about kernels and programming.
 
 ### Kernel
+
+[Anatomy of a virtual address](./kernel/anatomy.pdf)
+
 [Faking kernel pointers as user pointers (Linux)](./kernel/faking-uptr.pdf)
 
 [Spinlocks considered harmful (Linux)](./kernel/spinlock-softirq.pdf)
