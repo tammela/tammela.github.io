@@ -1,6 +1,5 @@
 #!/bin/bash
 
-tracker=$(cat gtag.js)
 lastmod=$(cat lastmod.js)
 if [ -x "$*" ]; then
    files=""
@@ -17,7 +16,6 @@ do
    echo $wc
    n=$(($wc - 3))
    echo "$(head -n +$n $f)" > $f
-   echo $tracker >> $f
    echo $lastmod >> $f
    echo "</body>" >> $f
    echo "</html>" >> $f
