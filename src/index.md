@@ -12,6 +12,8 @@ A little corner about kernels and programming.
 
 ### Programming
 
+[Security](https://xkcd.com/538/)
+
 [Lua LLVM Binding](https://github.com/tammela/lua-llvm-binding)
 
 [Formal Grammar (comic)](https://xkcd.com/1090/)
