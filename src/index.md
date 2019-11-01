@@ -1,11 +1,17 @@
 # pedro's memory dump
 
-###Kernel
-[Faking kernel pointers as user pointers](./kernel/faking-pointers.html)
+A little corner about kernels and programming.
 
-[Spinlocks considered harmful](./kernel/spinlock-softirq.html)
+###Kernel
+[Faking kernel pointers as user pointers (Linux)](./kernel/faking-pointers.html)
+
+[Spinlocks considered harmful (Linux)](./kernel/spinlock-softirq.html)
 
 ###Programming
+
+[Lua LLVM Binding](https://github.com/tammela/lua-llvm-binding)
+
+[Formal Grammar (comic)](https://xkcd.com/1090/)
 
 [Operating Systems (comic)](https://xkcd.com/1508/)
 

@@ -1,0 +1,187 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.pedrotammela.com}{\Large Pedro Caldas Tammela}} & Email : \href{mailto:pctammela@gmail.com}{pctammela@gmail.com}\\
+  \href{https://www.pedrotammela.com/}{https://www.pedrotammela.com} & Mobile : +55-21-99866-5009 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Pontifícia Universidade Católica do Rio de Janeiro}{Rio de Janeiro, Brazil}
+      {Bachelor of Computer Science}{Jan. 2015 -- Dec. 2019}
+      \resumeItemListStart
+      \resumeItem{{Bachelor's Thesis}}
+          {Scripting Linux system calls with Lua.}
+      \resumeItem{{Awarded}}
+          {90\% Scholarship for 3 years.}
+       \resumeItem{{Course Emphasis}}
+          {Programming languages theory and Distributed systems}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Pontifícia Universidade Católica do Rio de Janeiro}{Rio de Janeiro, Brazil}
+      {Minor in Entrepreneurship}{Jul. 2017 -- Dec. 2019}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://www.cujo.com}{CUJO AI}}{Rio de Janeiro, Brazil}
+      {Contractor}{Jan. 2017 - Present}
+      \resumeItemListStart
+      \resumeItem{{Cross architecture development}}
+          {ARM, x86 and MIPS architectures.}
+      \resumeItem{\href{https://github.com/luainkernel/lunatik}{Lunatik}}
+          {A porting project of the Lua scripting language to the Linux kernel.}
+      \resumeItem{\href{https://www.pedrotammela.com/slides/nflua-luaw17.pdf}{NFLua}}
+          {A packet scripting engine based on Lunatik and Netfilter.}
+      \resumeItem{{Meta-data parsing}}
+          {Protocols parser written in Lua for software interrupt processing.}
+      \resumeItem{{Packet meta-data analysis}}
+          {Layer 3/4 meta-data analysis and real time data collection.}
+      \resumeItem{{Layer 3 quarantine}}
+          {A layer 3 packet quarantine using skb references.}
+      \resumeItem{{Packet reputation}}
+          {Real time packet reputation analysis with distributed communication and kernel/user-space synchronization.}
+      \resumeItem{{Proof of Concepts}}
+          {Written numerous proof of concepts in Lua and C for upcoming features, researching the feasibility of the feature in an embedded platform with limited resources.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Certifications-----------------
+\section{Certifications}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://summerofcode.withgoogle.com}{Google Summer of Code}}{Rio de Janeiro, Brazil}
+      {Associate Mentor for LabLua}{May 2018 - Aug. 2018}
+      \resumeItemListStart
+      \resumeItem{\href{https://github.com/caioluiz/lunatik}{Rcu for Lunatik}}
+          {A Lua binding for the kernel Rcu API. Developed by Caio Messias.}
+      \resumeItem{\href{https://github.com/tcz717/lunatik/tree/luasocket-with-docs/socket}{Socket for Lunatik}}
+          {A Lua binding for the kernel Socket API. Developed by Chengzhi Tan.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+ %-----------Projects-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \item{
+        \href{https://github.com/tammela/lua-llvm-binding}{\textbf{Lua LLVM Binding}}{: A Lua binding for the C LLVM Backend.}
+    }
+    \item{
+        \href{https://github.com/luainkernel}{\textbf{Lua in Kernel}}{: Continuous development and support for kernel ports of the Lua scripting language.}
+    }
+    \item{
+        \href{https://github.com/luainkernel/lunatik}{\textbf{Lunatik}}{: A port of the Lua language for the x86 Linux kernel. Originally developed by CUJO AI.}
+    }
+    \item{
+        \href{https://github.com/luainkernel/poc-driver}{\textbf{PoC Driver}}{: A driver that provides a pseudo device to run Lua scripts inside the kernel. Written for proof of concepts.}
+    }
+    \item{
+        \href{https://www.pedrotammela.com}{\textbf{Personal Website}}{: Where I write about interesting stuff.}
+    }
+
+  \resumeSubHeadingListEnd
+
+ %-----------Conferences-----------------
+\section{Conferences}
+  \resumeSubHeadingListStart
+    \item{
+        \textbf{Google Summer of Code 2018}{: Conference sponsored by Google for GSoC Mentors in Sunnyvale, California.}
+    }
+    \item{
+        \textbf{Lua Workshop 2018 (Speaker)}{: Conference sponsored by CUJO AI in Kaunas, Lithuania.}
+    }
+    \item{
+        \textbf{Lua Workshop 2017}{: Conference sponsored by KONG in San Francisco, California.}
+    }
+    \item{
+        \textbf{LuaConf 2017}{: Conference sponsored by PUC-Rio in Rio de Janeiro, Brazil.}
+    }
+    \item{
+        \textbf{LuaConf 2016}{: Conference sponsored by PUC-Rio in Rio de Janeiro, Brazil.}
+    }
+  \resumeSubHeadingListEnd
+\end{document}
