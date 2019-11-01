@@ -1,13 +1,13 @@
-# pedro's memory dump
+% pedro's memory dump
 
 A little corner about kernels and programming.
 
-###Kernel
-[Faking kernel pointers as user pointers (Linux)](./kernel/faking-pointers.html)
+### Kernel
+[Faking kernel pointers as user pointers (Linux)](./kernel/faking-uptr.pdf)
 
-[Spinlocks considered harmful (Linux)](./kernel/spinlock-softirq.html)
+[Spinlocks considered harmful (Linux)](./kernel/spinlock-softirq.pdf)
 
-###Programming
+### Programming
 
 [Lua LLVM Binding](https://github.com/tammela/lua-llvm-binding)
 
@@ -24,10 +24,10 @@ A little corner about kernels and programming.
 [Real Programmers (comic)](https://www.xkcd.com/378/)
 
 
-###Publications
+### Publications
 [Scripting Linux system calls with Lua - Lua Workshop 2018](./slides/Workshop2018.pdf)
 
-###About
+### About
 
 [LinkedIn](https://www.linkedin.com/in/pedro-tammela/)
 

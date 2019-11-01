@@ -1,4 +1,6 @@
-# Faking kernel space pointers as user space pointers
+% Faking user space pointers
+% Pedro Tammela
+% Jun 29 2019
 
 I've come across an interesting technique used by the Linux kernel, across a lot of modules but especially in the in-house variants of the sockets system calls, to fake kernel pointers as user space pointers and call system calls directly.
 

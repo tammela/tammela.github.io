@@ -1,4 +1,6 @@
-#Spinlocks considered harmful
+% Spinlocks considered harmful
+% Pedro Tammela
+% Jun 29 2019
 
 Spinlocks can be very tricky perfomance degraders in software interrupts. Mostly because software interrupts run concurrently and are not allowed to sleep.
 
